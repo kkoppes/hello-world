@@ -1,0 +1,236 @@
+root:NXroot
+  @SCHEMA = 20214
+  INDEX:NXgroup
+    NASTRAN:NXgroup
+      RESULT:NXgroup
+        ELEMENTAL:NXgroup
+          ELEMENT_FORCE:NXgroup
+            BAR = [('DOMAIN_ID', '<i8'), ('POSITION', '<i8'), ('LENGTH', '<i8')](802)
+            BEAM = [('DOMAIN_ID', '<i8'), ('POSITION', '<i8'), ('LENGTH', '<i8')](802)
+            CONROD = [('DOMAIN_ID', '<i8'), ('POSITION', '<i8'), ('LENGTH', '<i8')](802)
+            ELAS1 = [('DOMAIN_ID', '<i8'), ('POSITION', '<i8'), ('LENGTH', '<i8')](802)
+            ELAS2 = [('DOMAIN_ID', '<i8'), ('POSITION', '<i8'), ('LENGTH', '<i8')](802)
+            QUAD4 = [('DOMAIN_ID', '<i8'), ('POSITION', '<i8'), ('LENGTH', '<i8')](802)
+            ROD = [('DOMAIN_ID', '<i8'), ('POSITION', '<i8'), ('LENGTH', '<i8')](802)
+            TRIA3 = [('DOMAIN_ID', '<i8'), ('POSITION', '<i8'), ('LENGTH', '<i8')](802)
+          STRAIN:NXgroup
+            BAR = [('DOMAIN_ID', '<i8'), ('POSITION', '<i8'), ('LENGTH', '<i8')](802)
+            BEAM = [('DOMAIN_ID', '<i8'), ('POSITION', '<i8'), ('LENGTH', '<i8')](802)
+            CONROD = [('DOMAIN_ID', '<i8'), ('POSITION', '<i8'), ('LENGTH', '<i8')](802)
+            ELAS1 = [('DOMAIN_ID', '<i8'), ('POSITION', '<i8'), ('LENGTH', '<i8')](802)
+            ELAS2 = [('DOMAIN_ID', '<i8'), ('POSITION', '<i8'), ('LENGTH', '<i8')](802)
+            QUAD4 = [('DOMAIN_ID', '<i8'), ('POSITION', '<i8'), ('LENGTH', '<i8')](802)
+            QUAD4_COMP = [('DOMAIN_ID', '<i8'), ('POSITION', '<i8'), ('LENGTH', '<i8')](802)
+            ROD = [('DOMAIN_ID', '<i8'), ('POSITION', '<i8'), ('LENGTH', '<i8')](802)
+            TRIA3 = [('DOMAIN_ID', '<i8'), ('POSITION', '<i8'), ('LENGTH', '<i8')](802)
+            TRIA3_COMP = [('DOMAIN_ID', '<i8'), ('POSITION', '<i8'), ('LENGTH', '<i8')](802)
+          STRESS:NXgroup
+            BAR = [('DOMAIN_ID', '<i8'), ('POSITION', '<i8'), ('LENGTH', '<i8')](802)
+            BEAM = [('DOMAIN_ID', '<i8'), ('POSITION', '<i8'), ('LENGTH', '<i8')](802)
+            CONROD = [('DOMAIN_ID', '<i8'), ('POSITION', '<i8'), ('LENGTH', '<i8')](802)
+            ELAS1 = [('DOMAIN_ID', '<i8'), ('POSITION', '<i8'), ('LENGTH', '<i8')](802)
+            ELAS2 = [('DOMAIN_ID', '<i8'), ('POSITION', '<i8'), ('LENGTH', '<i8')](802)
+            QUAD4 = [('DOMAIN_ID', '<i8'), ('POSITION', '<i8'), ('LENGTH', '<i8')](802)
+            QUAD4_COMP = [('DOMAIN_ID', '<i8'), ('POSITION', '<i8'), ('LENGTH', '<i8')](802)
+            ROD = [('DOMAIN_ID', '<i8'), ('POSITION', '<i8'), ('LENGTH', '<i8')](802)
+            TRIA3 = [('DOMAIN_ID', '<i8'), ('POSITION', '<i8'), ('LENGTH', '<i8')](802)
+            TRIA3_COMP = [('DOMAIN_ID', '<i8'), ('POSITION', '<i8'), ('LENGTH', '<i8')](802)
+        NODAL:NXgroup
+          DISPLACEMENT = [('DOMAIN_ID', '<i8'), ('POSITION', '<i8'), ('LENGTH', '<i8')](802)
+          GRID_FORCE = [('DOMAIN_ID', '<i8'), ('POSITION', '<i8'), ('LENGTH', '<i8')](802)
+          GRID_WEIGHT = (1, 0, 1)
+  NASTRAN:NXgroup
+    @ARCH = 'linux64_rhe77i8'
+    @HOSTNAME = 'caels005.de.pa.corp'
+    @IFPSTAR = 'NO'
+    @INPUT = 'A350-1000_D20200710_SMM14i3_S1314_ST7_HAT_FAT_...'
+    @SOL = 101
+    @TIME = 'Tue Aug  1 09:37:08 2023 (UTC+1)'
+    @VERSION = 'msc20214'
+    INPUT:NXgroup
+      CONSTRAINT:NXgroup
+        SPC1:NXgroup
+          SPC1_G:NXgroup
+            G = [('ID', '<i8')](55)
+              @version = 0
+            IDENTITY = [('SID', '<i8'), ('C', '<i8'), ('G_POS', '<i8'), ('G_LEN', '<i8'), ('DOMAIN_ID', '<i8')](55)
+              @version = 0
+        TEMP = [('SID', '<i8'), ('G', '<i8'), ('T', '<f8'), ('DOMAIN_ID', '<i8')](2051577)
+          @version = 0
+        TEMPD = [('SID', '<i8'), ('T', '<f8'), ('DOMAIN_ID', '<i8')](161)
+          @version = 0
+      COORDINATE_SYSTEM:NXgroup
+        CORD2R = [('CID', '<i8'), ('RID', '<i8'), ('A1', '<f8'), ('A2', '<f8'), ('A3', '<f8'), ('B1', '<f8'), ('B2', '<f8'), ('B3', '<f8'), ('C1', '<f8'), ('C2', '<f8'), ('C3', '<f8'), ('DOMAIN_ID', '<i8')](6)
+          @version = 0
+        TRANSFORMATION:NXgroup
+          @base = 1
+          IDENTITY = [('CID', '<i8'), ('TYPE', '<i8'), ('IINDEX', '<i8'), ('RINDEX', '<i8'), ('DOMAIN_ID', '<i8')](6)
+            @version = 0
+          RDATA = [('DATA', '<f8')](72)
+            @version = 0
+      DOMAINS = (1, 0, 0, 0, 0)
+        @version = 0
+      ELEMENT:NXgroup
+        CBAR = [('EID', '<i8'), ('PID', '<i8'), ('GA', '<i8'), ('GB', '<i8'), ('FLAG', '<i8'), ('X1', '<f8'), ('X2', '<f8'), ('X3', '<f8'), ('GO', '<i8'), ('PA', '<i8'), ('PB', '<i8'), ('W1A', '<f8'), ('W2A', '<f8'), ('W3A', '<f8'), ('W1B', '<f8'), ('W2B', '<f8'), ('W3B', '<f8'), ('DOMAIN_ID', '<i8')](77)
+          @version = 0
+        CBEAM = [('EID', '<i8'), ('PID', '<i8'), ('GA', '<i8'), ('GB', '<i8'), ('SA', '<i8'), ('SB', '<i8'), ('X', '<f8', (3,)), ('G0', '<i8'), ('F', '<i8'), ('PA', '<i8'), ('PB', '<i8'), ('WA', '<f8', (3,)), ('WB', '<f8', (3,)), ('DOMAIN_ID', '<i8')](6546)
+          @version = 0
+        CELAS1 = [('EID', '<i8'), ('PID', '<i8'), ('G1', '<i8'), ('G2', '<i8'), ('C1', '<i8'), ('C2', '<i8'), ('DOMAIN_ID', '<i8')](90)
+          @version = 0
+        CELAS2 = [('EID', '<i8'), ('K', '<f8'), ('G1', '<i8'), ('G2', '<i8'), ('C1', '<i8'), ('C2', '<i8'), ('GE', '<f8'), ('S', '<f8'), ('DOMAIN_ID', '<i8')](67)
+          @version = 0
+        CONROD = [('EID', '<i8'), ('G1', '<i8'), ('G2', '<i8'), ('MID', '<i8'), ('A', '<f8'), ('J', '<f8'), ('C', '<f8'), ('NSM', '<f8'), ('DOMAIN_ID', '<i8')](58)
+          @version = 0
+        CQUAD4 = [('EID', '<i8'), ('PID', '<i8'), ('G', '<i8', (4,)), ('THETA', '<f8'), ('ZOFFS', '<f8'), ('TFLAG', '<i8'), ('T', '<f8', (4,)), ('MCID', '<i8'), ('DOMAIN_ID', '<i8')](11548)
+          @version = 0
+        CROD = [('EID', '<i8'), ('PID', '<i8'), ('G', '<i8', (2,)), ('DOMAIN_ID', '<i8')](7171)
+          @version = 0
+        CTRIA3 = [('EID', '<i8'), ('PID', '<i8'), ('G', '<i8', (3,)), ('THETA', '<f8'), ('ZOFFS', '<f8'), ('TFLAG', '<i8'), ('T', '<f8', (3,)), ('MCID', '<i8'), ('DOMAIN_ID', '<i8')](324)
+          @version = 0
+        RBE2:NXgroup
+          GM = [('ID', '<i8')](114)
+            @version = 0
+          RB = [('EID', '<i8'), ('GN', '<i8'), ('CM', '<i8'), ('GM_POS', '<i8'), ('GM_LEN', '<i8'), ('ALPHA', '<f8'), ('TREF', '<f8'), ('DOMAIN_ID', '<i8')](107)
+            @version = 20210
+        RBE3:NXgroup
+          G = [('ID', '<i8')](3276)
+            @version = 0
+          IDENTITY = [('EID', '<i8'), ('REFG', '<i8'), ('REFC', '<i8'), ('WTCG_POS', '<i8'), ('WTCG_LEN', '<i8'), ('GM_POS', '<i8'), ('GM_LEN', '<i8'), ('ALPHA', '<f8'), ('TREF', '<f8'), ('DOMAIN_ID', '<i8')](1012)
+            @version = 20210
+          WTCG = [('WT1', '<f8'), ('C', '<i8'), ('G_POS', '<i8'), ('G_LEN', '<i8')](2946)
+            @version = 0
+      LOAD:NXgroup
+        FORCE = [('SID', '<i8'), ('G', '<i8'), ('CID', '<i8'), ('F', '<f8'), ('N', '<f8', (3,)), ('DOMAIN_ID', '<i8')](400384)
+          @version = 0
+        LOAD:NXgroup
+          IDENTITY = [('SID', '<i8'), ('S', '<f8'), ('SFACTORS_POS', '<i8'), ('SFACTORS_LEN', '<i8'), ('DOMAIN_ID', '<i8')](802)
+            @version = 0
+          SFACTORS = [('SI', '<f8'), ('LI', '<i8')](345261)
+            @version = 0
+        MOMENT = [('SID', '<i8'), ('G', '<i8'), ('CID', '<i8'), ('M', '<f8'), ('N', '<f8', (3,)), ('DOMAIN_ID', '<i8')](172860)
+          @version = 0
+      MATERIAL:NXgroup
+        MAT1 = [('MID', '<i8'), ('E', '<f8'), ('G', '<f8'), ('NU', '<f8'), ('RHO', '<f8'), ('A', '<f8'), ('TREF', '<f8'), ('GE', '<f8'), ('ST', '<f8'), ('SC', '<f8'), ('SS', '<f8'), ('MCSID', '<i8'), ('DOMAIN_ID', '<i8')](13602)
+          @version = 0
+        MAT2 = [('MID', '<i8'), ('G11', '<f8'), ('G12', '<f8'), ('G13', '<f8'), ('G22', '<f8'), ('G23', '<f8'), ('G33', '<f8'), ('RHO', '<f8'), ('A1', '<f8'), ('A2', '<f8'), ('A12', '<f8'), ('TREF', '<f8'), ('GE', '<f8'), ('ST', '<f8'), ('SC', '<f8'), ('SS', '<f8'), ('MCSID', '<i8'), ('DOMAIN_ID', '<i8')](18408)
+          @version = 0
+        MAT8 = [('MID', '<i8'), ('E1', '<f8'), ('E2', '<f8'), ('NU12', '<f8'), ('G12', '<f8'), ('G1Z', '<f8'), ('G2Z', '<f8'), ('RHO', '<f8'), ('A1', '<f8'), ('A2', '<f8'), ('TREF', '<f8'), ('XT', '<f8'), ('XC', '<f8'), ('YT', '<f8'), ('YC', '<f8'), ('S', '<f8'), ('GE', '<f8'), ('F12', '<f8'), ('STRN', '<f8'), ('DOMAIN_ID', '<i8')](3655)
+          @version = 0
+      NODE:NXgroup
+        GRID = [('ID', '<i8'), ('CP', '<i8'), ('X', '<f8', (3,)), ('CD', '<i8'), ('PS', '<i8'), ('SEID', '<i8'), ('DOMAIN_ID', '<i8')](12963)
+          @version = 0
+      PARAMETER:NXgroup
+        CASECC:NXgroup
+          MEMIDS = [('SETMEM', '<i8')](1604)
+            @version = 0
+          SETS = [('SID', '<i8'), ('SETID', '<i8'), ('SETLEN', '<i8'), ('MEMIDS_LEN', '<i8'), ('MEMIDS_POS', '<i8'), ('DOMAIN_ID', '<i8')](802)
+            @version = 0
+          SUBCASE = {'names': ['SID', 'MPCSET', 'SPCSET', 'ESLSET', 'REESET', 'ELDSET', 'THLDSET', 'THMATSET', 'TIC', 'NONPTSET', 'NONMEDIA', 'NONFMT', 'DYMLDSET', 'FEQRESET', 'TFSET', 'SYMFLG', 'LDSPTSET', 'LDSMEDIA', 'LDSFMT', 'DPLPTSET', 'DPLMEDIA', 'DPLFMT', 'STSPTSET', 'STSMEDIA', 'STSFMT', 'FCEPTSET', 'FCEMEDIA', 'FCEFMT', 'ACCPTSET', 'ACCMEDIA', 'ACCFMT', 'VELPTSET', 'VELMEDIA', 'VELFMT', 'FOCPTSET', 'FOCMEDIA', 'FOCFMT', 'TSTEPTRN', 'TITLE', 'SUBTITLE', 'LABEL', 'STPLTFLG', 'AXSYMSET', 'NOHARMON', 'TSTRU', 'SETKP', 'FLAGKP', 'K2PP', 'SETMP', 'FLAGMP', 'M2PP', 'SETBP', 'FLAGBP', 'B2PP', 'OUTRESPV', 'SEDR', 'FLDBNDY', 'CEESET', 'DAMPTBL', 'DYNRED', 'SSDSET', 'SSDMEDIA', 'SSDFMT', 'SSVSET', 'SSVMEDIA', 'SSVFMT', 'SSASET', 'SSAMEDIA', 'SSAFMT', 'NONLINLD', 'PARTIT', 'CYCLIC', 'RANDOM', 'NONPARAM', 'FLUTTER', 'LCC', 'GPFSET', 'GPFMEDIA', 'GPFFMT', 'ESESET', 'ESEMEDIA', 'ESEFMT', 'ARFPTSET', 'ARFMEDIA', 'ARFFMT', 'SEID', 'LCN', 'GUST', 'SEFINAL', 'SEMG', 'SEKR', 'SELG', 'SELR', 'SEEX', 'SETKG', 'FLAGKG', 'K2GG', 'SETMG', 'FLAGMG', 'M2GG', 'SETBG', 'FLAGBG', 'B2GG', 'SVSET', 'SVMEDIA', 'SVFMT', 'FLUPTSET', 'FLUMEDIA', 'FLUFMT', 'HOUT', 'NOUT', 'SETPG', 'FLAGPG', 'P2G', 'LOADSET', 'SEMR', 'VONMISES', 'SECMDFLG', 'GPSPTSET', 'GPSMEDIA', 'GPSFMT', 'STFSET', 'STFMEDIA', 'STFFMT', 'CLOAD', 'SET2ID', 'DSAPRT', 'DSASTORE', 'DSAOUTPT', 'STNSET', 'STNMEDIA', 'STNFMT', 'APRESS', 'TRIM', 'MODLIST', 'REESETF', 'ESDPTSET', 'ESDMEDIA', 'ESDFMT', 'GSDPTSET', 'GSDMEDIA', 'GSDFMT', 'SEDV', 'SERE', 'SERS', 'CNTSET', 'CNTMEDIA', 'CNTFMT', 'DIVERG', 'OUTRCV', 'STATSUBP', 'DFT1', 'DFT2', 'ADAPT', 'DESOBJ', 'DESSUB', 'SUBSPAN', 'DESGLB', 'ANALYSIS', 'GPQSTRS', 'GPQFORC', 'GPQSTRN', 'SUPORT1', 'STATSUBB', 'BCID', 'AUXMODEL', 'ADACT', 'DATSET', 'DATMEDIA', 'DATFMT', 'VUGSET', 'VUGMEDIA', 'VUGFMT', 'MPCFSET', 'MPCMEDIA', 'MPCFFMT', 'REUESET', 'DAMPTBLF', 'ITERMETH', 'NLSSET', 'NLSMEDIA', 'NLSFMT', 'MODTRKID', 'DSAFORM', 'DSAEXPO', 'DSABEGIN', 'DSAINTVL', 'DSAFINAL', 'DSASETID', 'SORTFLG', 'RANDBIT', 'AECONFIG', 'AESYMXY', 'AESYMXZ', 'OCIDREQ', 'GPEPTSET', 'GPEMEDIA', 'GPEFMT', 'TEMPMAT', 'AECSSSET', 'EKEPTSET', 'EKEMEDIA', 'EKEFMT', 'EKETHRSH', 'EDEPTSET', 'EDEMEDIA', 'EDEFMT', 'EDETHRSH', 'DFT3', 'DFR1', 'DFR2', 'DFR3', 'SETK4G', 'FLAGK4G', 'K42GG', 'A2GG', 'NK42GG', 'NA2GG', 'EFFMASET', 'EFFMAGID', 'EFFMATHR', 'EQUILMED', 'EQUILGRD', 'RCRSET', 'RCRFMT', 'AEUXREF', 'GCHK', 'GCHKOUT', 'GCHKSET', 'GCHKGID', 'GCHKTHR', 'GCHKRTHR', 'GCHKDREC', 'ASPCMED', 'ASPCEPS', 'ASPCPRT', 'ASPCPCH', 'NK2PP', 'NM2PP', 'NB2PP', 'NK2GG', 'NM2GG', 'NB2GG', 'NP2G', 'GEODSET', 'GEODMXMN', 'GEODOCID', 'GEODNUMB', 'GEOLSET', 'GEOLMXMN', 'GEOLOCID', 'GEOLNUMB', 'GEOSSET', 'GEOSMXMN', 'GEOSOCID', 'GEOSNUMB', 'GEOMSET', 'GEOMMXMN', 'GEOMOCID', 'GEOMNUMB', 'GEOASET', 'GEOAMXMN', 'GEOAOCID', 'GEOANUMB', 'GEOVSET', 'GEOVMXMN', 'GEOVOCID', 'GEOVNUMB', 'NTFL', 'GPKESET', 'GPKEMEDI', 'GPKEFMT', 'SEDAMP', 'WCHK', 'WCHKOUT', 'WCHKSET', 'WCHKGID', 'WCHKCGI', 'WCHKWM', 'EXSEOUT', 'EXSEMED', 'EXSEUNIT', 'EXSERES1', 'EXSERES2', 'FK2PP', 'FM2PP', 'FB2PP', 'FK2GG', 'FM2GG', 'FB2GG', 'TICTYPE', 'FK42GG', 'FA2GG', 'SUBSTEP', 'STEPID', 'NSMID', 'ROUTDISP', 'ROUTVELO', 'ROUTACCE', 'ROUTLOAD', 'ROUTSPCF', 'ROUTSTRS', 'ROUTFORC', 'ROUTSTRN', 'ROUTMSCF', 'MDLSSET', 'MDLSMEDIA', 'MDLSFMT', 'MDLSESRT', 'MDLSTHRE', 'MDLSTFVL', 'MDLKSET', 'MDLKMEDIA', 'MDLKFMT', 'MDLKESRT', 'MDLKTHRE', 'MDLKTFVL', 'ACPOWSET', 'ACPOWMED', 'ACPOWFMT', 'ACPOWCSV', 'NLOUT', 'SEEFMNO', 'SEEFMHV', 'SEEFMDLF', 'SEEFMBND', 'SEEFMSDP', 'CONNECTOR', 'ESETHRSH', 'POSTUNIT', 'POSTOPT1', 'POSTOPT2', 'TICDIFF', 'DSAESEID', 'MXMNGSET', 'MXMNGMDA', 'MXMNGFMT', 'MXMNESET', 'MXMNEMDA', 'MXMNEFMT', 'MCFRSET', 'MCFRSOLN', 'MCFRFILT', 'MCFROPT', 'ELSUMID', 'ELSUMOPT', 'ELSUMDUM', 'RGYRO', 'CMSESET', 'CMSEMDIA', 'CMSEOPTS', 'CMSETHRE', 'CMSETOPN', 'GPRSORT', 'MASSSET', 'AESOLN', 'POSTO2NM', 'RANDVAR', 'RSVCRQTS', 'RSVCOPTS', 'RSVCSTBS', 'RSVCRQTC', 'RSVCOPTC', 'RSVCSTBC', 'DESVAR', 'BCONTACTI', 'BCONTACTC', 'MODSELS1', 'MODSELS2', 'MODSELS3', 'MODSELS4', 'MODSELS5', 'MODSELS6', 'MODSELS7', 'MODSELS8', 'MODSELS9', 'MODSELF1', 'MODSELF2', 'MODSELF3', 'MODSELF4', 'MODSELF5', 'MODSELF6', 'MODSELF7', 'MODSELF8', 'MODSELF9', 'FTNURN', 'SUFNAM1', 'SUFNAM2', 'ENVELOP1', 'ENVELOP2', 'GPFLXSET', 'GPFLXMED', 'CAMPBELL', 'SPLINOUT', 'MONITOR', 'FBODYLD', 'STOCHAST', 'EXPTLDID', 'EXPTLDNM', 'EXPTLDSI', 'AERCONFIG', 'NLHARM', 'PFMSSID', 'PFMSMED', 'PFMSFMT', 'PFMSSSET', 'PFMSFLTR', 'PFMSOPTS', 'PFMSSTMP', 'PFMFSID', 'PFMFMED', 'PFMFFMT', 'PFMFSSET', 'PFMFPSET', 'PFMFFLTR', 'PFMFOPTS', 'PFMFFLMP', 'PFMFSTMP', 'PFPSID', 'PFPMED', 'PFPFMT', 'PFPSSET', 'PFPFLTR', 'PFPOPTS', 'PFPPSET', 'PFGSID', 'PFGMED', 'PFGFMT', 'PFGSSET', 'PFGGSET', 'NLICCASE', 'NLICSTEP', 'NLICLFAC', 'ACFPMSET', 'ACFPMMED', 'ACFPMFMT', 'FRFFLAG', 'FRFCMPID', 'FRFCONST', 'FRFUNTNO', 'FRFCMPNM', 'DESMOD', 'RSDAMPST', 'RSDAMPFL', 'VCCT', 'FP2G', 'FRQVAR', 'HADAPT', 'BCHANGE', 'BCMOVE', 'BSQUEAL', 'UNGLUE', 'HSUBCASE', 'HSTEP', 'HTIME', 'ERPSID', 'ERPMED', 'ERPFMT', 'ERPSSET', 'ERPFLTR', 'ERPOPTS', 'ERPCSV', 'TESTTHRR', 'TESTTHRI', 'ASMOUTFL', 'ASMOUTNM', 'ICFUNTNO', 'TFOSET', 'TFUNIT', 'TFLSET', 'TFOPTS', 'NLOOPH', 'NLSTEP', 'NMODES', 'RCPARM', 'NLOPCTRL', 'NLOPDBG', 'NLOPPOST', 'NLOPMPCH', 'NLICSSTP', 'DEACTEL', 'ACTIVAT', 'INTENSET', 'INTENMED', 'INTENFMT', 'NLICTOLR', 'PFPSSID', 'PFPSMED', 'PFPSFMT', 'PFPSSSET', 'PFPSFLTR', 'PFPSOPTS', 'PFPSPSET', 'ACTISET', 'ELSOSET', 'ELSRSET', 'ELSSSET', 'ELSTHRS', 'ELSBITS', 'WTSOSET', 'WTSRSET', 'WTSSSET', 'WTSTHRS', 'WTSBITS', 'PACOSET', 'PACSSET', 'PACBITS', 'IRLOAD', 'ICFSET', 'ICFMED', 'ICFFMT', 'ICFGENST', 'ICFGENNM', 'ICFUSEST', 'ICFUSENM', 'HISTSET', 'HISTTYPE', 'HISTFMT', 'FATIGUE', 'FTGMED', 'FTGFMT', 'NLOPDELI', 'NLOPGRID', 'DASAVE', 'GVSET', 'GVMEDIA', 'GVFMT', 'ERMPF', 'NVELOSET', 'NVELFDEF', 'NVELFDTA', 'NVELTHRS', 'NVELBITS', 'VITSOSET', 'VITSRSET', 'VITSSSET', 'VITSTHRS', 'VITSBITS', 'THLDVER', 'THMATVER', 'NPEAK', 'NEAR', 'LFREQ', 'HFREQ', 'RTYPE', 'PSCALE', 'NSAMP', 'MONSET', 'SEED', 'OFFD', 'FSORT2', 'MFREQ', 'BCONTACT', 'SOLNID', 'ExtDROut', 'ExtDROmd', 'ExtDROun', 'ExtDRIn', 'ExtDRImd', 'ExtDRIun', 'FemCheck', 'LSEM', 'SYM_LEN', 'SYM_POS', 'DOMAIN_ID'], 'formats': ['<i8', '<i8', '<i8', '<i8', '<i8', '<i8', '<i8', '<i8', '<i8', '<i8', '<i8', '<i8', '<i8', '<i8', '<i8', '<i8', '<i8', '<i8', '<i8', '<i8', '<i8', '<i8', '<i8', '<i8', '<i8', '<i8', '<i8', '<i8', '<i8', '<i8', '<i8', '<i8', '<i8', '<i8', '<i8', '<i8', '<i8', '<i8', 'S128', 'S128', 'S128', '<i8', '<i8', '<i8', '<i8', '<i8', '<i8', 'S8', '<i8', '<i8', 'S8', '<i8', '<i8', 'S8', '<i8', '<i8', '<i8', '<i8', '<i8', '<i8', '<i8', '<i8', '<i8', '<i8', '<i8', '<i8', '<i8', '<i8', '<i8', '<i8', '<i8', '<i8', '<i8', '<i8', '<i8', '<i8', '<i8', '<i8', '<i8', '<i8', '<i8', '<i8', '<i8', '<i8', '<i8', '<i8', '<i8', '<i8', '<i8', '<i8', '<i8', '<i8', '<i8', '<i8', '<i8', '<i8', 'S8', '<i8', '<i8', 'S8', '<i8', '<i8', 'S8', '<i8', '<i8', '<i8', '<i8', '<i8', '<i8', ('<i8', (3,)), ('<i8', (3,)), '<i8', '<i8', 'S8', '<i8', '<i8', '<i8', '<i8', '<i8', '<i8', '<i8', '<i8', '<i8', '<i8', '<i8', '<i8', '<i8', '<i8', '<i8', '<i8', '<i8', '<i8', '<i8', '<i8', '<i8', '<i8', '<i8', '<i8', '<i8', '<i8', '<i8', '<i8', '<i8', '<i8', '<i8', '<i8', '<i8', '<i8', '<i8', '<i8', '<i8', '<f8', '<f8', '<i8', '<i8', '<i8', '<i8', '<i8', 'S4', '<i8', '<i8', '<i8', '<i8', '<i8', '<i8', '<i8', '<i8', '<i8', '<i8', '<i8', '<i8', '<i8', '<i8', '<i8', '<i8', '<i8', '<i8', '<i8', '<i8', '<i8', '<i8', '<i8', '<i8', '<i8', '<i8', '<i8', '<i8', '<i8', '<i8', '<i8', '<i8', 'S8', '<i8', '<i8', '<i8', '<i8', '<i8', '<i8', '<i8', '<i8', '<i8', '<i8', '<i8', '<f8', '<i8', '<i8', '<i8', '<f8', '<f8', '<f8', '<f8', '<f8', '<i8', '<i8', 'S8', 'S8', '<i8', '<i8', '<i8', '<i8', '<f8', '<i8', '<i8', '<i8', '<i8', '<i8', '<i8', '<i8', '<i8', '<i8', '<f8', '<f8', '<i8', '<i8', '<f8', '<f8', '<i8', '<i8', '<i8', '<i8', '<i8', '<i8', '<i8', '<i8', '<i8', '<i8', '<i8', '<i8', '<i8', '<i8', '<i8', '<i8', '<i8', '<i8', '<i8', '<i8', '<i8', '<i8', '<i8', '<i8', '<i8', '<i8', '<i8', '<i8', '<i8', '<i8', '<i8', '<i8', '<i8', '<i8', '<i8', '<i8', '<i8', '<i8', '<i8', '<i8', '<i8', '<i8', '<i8', '<i8', '<i8', '<i8', '<i8', '<i8', '<i8', '<i8', '<i8', '<i8', '<i8', '<i8', 'S4', '<i8', '<i8', '<i8', '<i8', '<i8', '<i8', '<i8', '<i8', '<i8', '<i8', '<i8', '<i8', '<i8', '<i8', '<i8', '<i8', '<i8', 'S4', '<f8', '<i8', '<i8', '<i8', '<i8', 'S4', '<f8', '<i8', '<i8', '<i8', '<i8', '<i8', '<i8', '<i8', 'S4', '<i8', '<i8', '<i8', '<i8', '<f8', '<i8', '<i8', '<i8', 'S4', '<i8', '<i8', '<i8', '<i8', '<i8', '<i8', '<i8', '<i8', '<i8', '<f8', '<i8', '<i8', '<i8', '<i8', '<i8', '<i8', '<i8', '<i8', '<f8', '<i8', '<i8', '<i8', 'S8', 'S8', '<i8', '<i8', '<i8', '<i8', '<i8', '<i8', '<i8', '<i8', '<i8', 'S4', '<i8', '<i8', '<i8', '<f8', '<f8', '<f8', '<f8', '<f8', '<f8', '<i8', '<i8', '<i8', '<f8', '<f8', '<f8', '<f8', '<f8', '<f8', '<i8', '<i8', '<i8', 'S4', 'S4', '<i8', '<i8', '<i8', ('<i8', (2,)), '<i8', ('<i8', (2,)), '<i8', '<i8', 'S8', '<i8', 'S8', '<i8', '<i8', '<i8', '<i8', '<i8', '<f8', '<i8', '<i8', '<i8', '<i8', '<i8', '<i8', '<i8', '<f8', '<i8', '<i8', '<i8', '<i8', '<i8', '<i8', '<i8', '<f8', '<i8', '<i8', '<i8', '<i8', '<i8', '<i8', '<i8', '<i8', '<i8', '<f8', '<i8', '<i8', '<i8', '<i8', '<i8', '<i8', '<i8', ('<i8', (2,)), 'S8', '<i8', '<i8', '<i8', '<i8', '<i8', '<i8', '<i8', '<i8', '<i8', '<i8', '<i8', '<i8', '<f8', '<i8', '<i8', '<i8', '<i8', '<f8', '<i8', '<i8', '<f8', '<i8', '<i8', ('<i8', (2,)), '<i8', '<i8', '<i8', '<i8', '<i8', '<i8', '<i8', '<i8', '<i8', '<i8', '<i8', '<i8', '<i8', '<i8', '<i8', '<i8', '<i8', '<i8', '<i8', '<f8', '<i8', '<i8', '<i8', '<i8', '<f8', '<i8', '<i8', '<i8', '<i8', '<i8', '<i8', '<f8', '<i8', '<i8', '<i8', '<i8', '<f8', '<i8', '<i8', '<i8', '<i8', '<i8', '<i8', '<i8', '<i8', '<i8', ('<i8', (2,)), '<i8', ('<i8', (2,)), '<i8', '<i8', '<i8', '<i8', '<i8', '<i8', '<i8', '<i8', '<i8', '<i8', '<i8', '<i8', '<i8', '<i8', '<i8', '<i8', '<f8', '<i8', '<i8', '<i8', '<i8', '<f8', '<i8', '<i8', '<i8', '<i8', '<f8', '<f8', '<f8', '<i8', '<i8', '<i8', '<i8', '<i8', '<f8', '<i8', '<i8', 'S4', '<i8', '<i8', '<i8', '<i8', '<i8', '<i8', '<i8', '<i8', '<i8', '<i8', '<i8', '<i8'], 'offsets': [0, 8, 16, 24, 32, 40, 48, 56, 64, 72, 80, 88, 96, 104, 112, 120, 128, 136, 144, 152, 160, 168, 176, 184, 192, 200, 208, 216, 224, 232, 240, 248, 256, 264, 272, 280, 288, 296, 304, 432, 560, 688, 696, 704, 712, 720, 728, 736, 744, 752, 760, 768, 776, 784, 792, 800, 808, 816, 824, 832, 840, 848, 856, 864, 872, 880, 888, 896, 904, 912, 920, 928, 936, 944, 952, 960, 968, 976, 984, 992, 1000, 1008, 1016, 1024, 1032, 1040, 1048, 1056, 1064, 1072, 1080, 1088, 1096, 1104, 1112, 1120, 1128, 1136, 1144, 1152, 1160, 1168, 1176, 1184, 1192, 1200, 1208, 1216, 1224, 1232, 1256, 1280, 1288, 1296, 1304, 1312, 1320, 1328, 1336, 1344, 1352, 1360, 1368, 1376, 1384, 1392, 1400, 1408, 1416, 1424, 1432, 1440, 1448, 1456, 1464, 1472, 1480, 1488, 1496, 1504, 1512, 1520, 1528, 1536, 1544, 1552, 1560, 1568, 1576, 1584, 1592, 1600, 1608, 1616, 1624, 1632, 1640, 1648, 1656, 1664, 1672, 1680, 1688, 1696, 1704, 1712, 1720, 1728, 1736, 1744, 1752, 1760, 1768, 1776, 1784, 1792, 1800, 1808, 1816, 1824, 1832, 1840, 1848, 1856, 1864, 1872, 1880, 1888, 1896, 1904, 1912, 1920, 1928, 1936, 1944, 1952, 1960, 1968, 1976, 1984, 1992, 2000, 2008, 2016, 2024, 2032, 2040, 2048, 2056, 2064, 2072, 2080, 2088, 2096, 2104, 2112, 2120, 2128, 2136, 2144, 2152, 2160, 2168, 2176, 2184, 2192, 2200, 2208, 2216, 2224, 2232, 2240, 2248, 2256, 2264, 2272, 2280, 2288, 2296, 2304, 2312, 2320, 2328, 2336, 2344, 2352, 2360, 2368, 2376, 2384, 2392, 2400, 2408, 2416, 2424, 2432, 2440, 2448, 2456, 2464, 2472, 2480, 2488, 2496, 2504, 2512, 2520, 2528, 2536, 2544, 2552, 2560, 2568, 2576, 2584, 2592, 2600, 2608, 2616, 2624, 2632, 2640, 2648, 2656, 2664, 2672, 2680, 2688, 2696, 2704, 2712, 2720, 2728, 2736, 2744, 2752, 2760, 2768, 2776, 2784, 2792, 2800, 2808, 2816, 2824, 2832, 2840, 2848, 2856, 2864, 2872, 2880, 2888, 2896, 2904, 2912, 2920, 2928, 2936, 2944, 2952, 2960, 2968, 2976, 2984, 2992, 3000, 3008, 3016, 3024, 3032, 3040, 3048, 3056, 3064, 3072, 3080, 3088, 3096, 3104, 3112, 3120, 3128, 3136, 3144, 3152, 3160, 3168, 3176, 3184, 3192, 3200, 3208, 3216, 3224, 3232, 3240, 3248, 3256, 3264, 3272, 3280, 3288, 3296, 3304, 3312, 3320, 3328, 3336, 3344, 3352, 3360, 3368, 3376, 3384, 3392, 3400, 3408, 3416, 3424, 3432, 3440, 3448, 3456, 3464, 3472, 3480, 3488, 3496, 3500, 3504, 3512, 3520, 3528, 3544, 3552, 3568, 3576, 3584, 3592, 3600, 3608, 3616, 3624, 3632, 3640, 3648, 3656, 3664, 3672, 3680, 3688, 3696, 3704, 3712, 3720, 3728, 3736, 3744, 3752, 3760, 3768, 3776, 3784, 3792, 3800, 3808, 3816, 3824, 3832, 3840, 3848, 3856, 3864, 3872, 3880, 3888, 3896, 3904, 3912, 3920, 3936, 3944, 3952, 3960, 3968, 3976, 3984, 3992, 4000, 4008, 4016, 4024, 4032, 4040, 4048, 4056, 4064, 4072, 4080, 4088, 4096, 4104, 4112, 4120, 4128, 4144, 4152, 4160, 4168, 4176, 4184, 4192, 4200, 4208, 4216, 4224, 4232, 4240, 4248, 4256, 4264, 4272, 4280, 4288, 4296, 4304, 4312, 4320, 4328, 4336, 4344, 4352, 4360, 4368, 4376, 4384, 4392, 4400, 4408, 4416, 4424, 4432, 4440, 4448, 4456, 4464, 4472, 4480, 4488, 4496, 4504, 4512, 4528, 4536, 4552, 4560, 4568, 4576, 4584, 4592, 4600, 4608, 4616, 4624, 4632, 4640, 4648, 4656, 4664, 4672, 4680, 4688, 4696, 4704, 4712, 4720, 4728, 4736, 4744, 4752, 4760, 4768, 4776, 4784, 4792, 4800, 4808, 4816, 4824, 4832, 4840, 4848, 4856, 4864, 4872, 4880, 4888, 4896, 4904, 4912, 4920, 4928, 4936, 4944], 'itemsize': 4952}(802)
+            @version = 1
+        DMIG:NXgroup
+          IDENTITY = (b'KAAX    ', 6, 2, 1476, 0, 1204, 1)
+            @version = 0
+          IRLIST = [('GI', '<i8'), ('CI', '<i8'), ('VR', '<f8')](371470)
+            @version = 0
+          JLIST = [('GJ', '<i8'), ('CJ', '<i8'), ('POS_I', '<i8'), ('NUM_I', '<i8')](1204)
+            @version = 0
+        MDLPRM = (b'HDF5    ', 1, 1)
+          @version = 0
+        PVT:NXgroup
+          CHAR = [('NAME', 'S8'), ('VALUE', 'S8'), ('DOMAIN_ID', '<i8')](3)
+            @version = 0
+          DOUBLE = [('NAME', 'S8'), ('VALUE', '<f8'), ('DOMAIN_ID', '<i8')](3)
+            @version = 0
+          INT = [('NAME', 'S8'), ('VALUE', '<i8'), ('DOMAIN_ID', '<i8')](7)
+            @version = 0
+      PROPERTY:NXgroup
+        PBAR = [('PID', '<i8'), ('MID', '<i8'), ('A', '<f8'), ('I1', '<f8'), ('I2', '<f8'), ('J', '<f8'), ('NSM', '<f8'), ('FE', '<f8'), ('C1', '<f8'), ('C2', '<f8'), ('D1', '<f8'), ('D2', '<f8'), ('E1', '<f8'), ('E2', '<f8'), ('F1', '<f8'), ('F2', '<f8'), ('K1', '<f8'), ('K2', '<f8'), ('I12', '<f8'), ('DOMAIN_ID', '<i8')](6)
+          @version = 0
+        PBARL:NXgroup
+          IDENTITY = (15987000, 15980003, b'MSCBML0 ', b'BAR     ', 0, 3, 1)
+            @version = 0
+          INFO = [(68.,) ( 5.,) ( 0.,)]
+            @version = 0
+        PBEAM = [('PID', '<i8'), ('MID', '<i8'), ('NSEGS', '<i8'), ('CCF', '<i8'), ('CWELD', '<i8'), ('SO', '<f8', (11,)), ('XXB', '<f8', (11,)), ('A', '<f8', (11,)), ('I1', '<f8', (11,)), ('I2', '<f8', (11,)), ('I12', '<f8', (11,)), ('J', '<f8', (11,)), ('NSM', '<f8', (11,)), ('C1', '<f8', (11,)), ('C2', '<f8', (11,)), ('D1', '<f8', (11,)), ('D2', '<f8', (11,)), ('E1', '<f8', (11,)), ('E2', '<f8', (11,)), ('F1', '<f8', (11,)), ('F2', '<f8', (11,)), ('K1', '<f8'), ('K2', '<f8'), ('S1', '<f8'), ('S2', '<f8'), ('NSIA', '<f8'), ('NSIB', '<f8'), ('CWA', '<f8'), ('CWB', '<f8'), ('M1A', '<f8'), ('M2A', '<f8'), ('M1B', '<f8'), ('M2B', '<f8'), ('N1A', '<f8'), ('N2A', '<f8'), ('N1B', '<f8'), ('N2B', '<f8'), ('DOMAIN_ID', '<i8')](6546)
+          @version = 0
+        PCOMP:NXgroup
+          IDENTITY = [('PID', '<i8'), ('NPLIES', '<i8'), ('Z0', '<f8'), ('NSM', '<f8'), ('SB', '<f8'), ('FT', '<i8'), ('TREF', '<f8'), ('GE', '<f8'), ('PLY_POS', '<i8'), ('PLY_LEN', '<i8'), ('DOMAIN_ID', '<i8')](3573)
+            @version = 0
+          PLY = [('MID', '<i8'), ('T', '<f8'), ('THETA', '<f8'), ('SOUT', '<i8')](55296)
+            @version = 0
+        PELAS = [('PID', '<i8'), ('K', '<f8'), ('GE', '<f8'), ('S', '<f8'), ('DOMAIN_ID', '<i8')](90)
+          @version = 0
+        PROD = [('PID', '<i8'), ('MID', '<i8'), ('A', '<f8'), ('J', '<f8'), ('C', '<f8'), ('NSM', '<f8'), ('DOMAIN_ID', '<i8')](7171)
+          @version = 0
+        PSHELL = [('PID', '<i8'), ('MID1', '<i8'), ('T', '<f8'), ('MID2', '<i8'), ('BK', '<f8'), ('MID3', '<i8'), ('TS', '<f8'), ('NSM', '<f8'), ('Z1', '<f8'), ('Z2', '<f8'), ('MID4', '<i8'), ('DOMAIN_ID', '<i8')](10951)
+          @version = 0
+    RESULT:NXgroup
+      DOMAINS = [('ID', '<i8'), ('SUBCASE', '<i8'), ('STEP', '<i8'), ('ANALYSIS', '<i8'), ('TIME_FREQ_EIGR', '<f8'), ('EIGI', '<f8'), ('MODE', '<i8'), ('DESIGN_CYCLE', '<i8'), ('RANDOM', '<i8'), ('SE', '<i8'), ('AFPM', '<i8'), ('TRMC', '<i8'), ('INSTANCE', '<i8'), ('MODULE', '<i8'), ('SUBSTEP', '<i8'), ('IMPFID', '<i8')](803)
+        @version = 20200
+      ELEMENTAL:NXgroup
+        ELEMENT_FORCE:NXgroup
+          BAR = [('EID', '<i8'), ('BM1A', '<f8'), ('BM2A', '<f8'), ('BM1B', '<f8'), ('BM2B', '<f8'), ('TS1', '<f8'), ('TS2', '<f8'), ('AF', '<f8'), ('TRQ', '<f8'), ('DOMAIN_ID', '<i8')](61754)
+            @version = 0
+          BEAM = [('EID', '<i8'), ('GRID', '<i8', (11,)), ('SD', '<f8', (11,)), ('BM1', '<f8', (11,)), ('BM2', '<f8', (11,)), ('TS1', '<f8', (11,)), ('TS2', '<f8', (11,)), ('AF', '<f8', (11,)), ('TTRQ', '<f8', (11,)), ('WTRQ', '<f8', (11,)), ('DOMAIN_ID', '<i8')](5249892)
+            @version = 0
+          CONROD = [('EID', '<i8'), ('AF', '<f8'), ('TRQ', '<f8'), ('DOMAIN_ID', '<i8')](46516)
+            @version = 0
+          ELAS1 = [('EID', '<i8'), ('F', '<f8'), ('DOMAIN_ID', '<i8')](72180)
+            @version = 0
+          ELAS2 = [('EID', '<i8'), ('F', '<f8'), ('DOMAIN_ID', '<i8')](53734)
+            @version = 0
+          QUAD4 = [('EID', '<i8'), ('MX', '<f8'), ('MY', '<f8'), ('MXY', '<f8'), ('BMX', '<f8'), ('BMY', '<f8'), ('BMXY', '<f8'), ('TX', '<f8'), ('TY', '<f8'), ('DOMAIN_ID', '<i8')](9261496)
+            @version = 0
+          ROD = [('EID', '<i8'), ('AF', '<f8'), ('TRQ', '<f8'), ('DOMAIN_ID', '<i8')](5751142)
+            @version = 0
+          TRIA3 = [('EID', '<i8'), ('MX', '<f8'), ('MY', '<f8'), ('MXY', '<f8'), ('BMX', '<f8'), ('BMY', '<f8'), ('BMXY', '<f8'), ('TX', '<f8'), ('TY', '<f8'), ('DOMAIN_ID', '<i8')](259848)
+            @version = 0
+        STRAIN:NXgroup
+          BAR = [('EID', '<i8'), ('X1A', '<f8'), ('X2A', '<f8'), ('X3A', '<f8'), ('X4A', '<f8'), ('AX', '<f8'), ('MAXA', '<f8'), ('MINA', '<f8'), ('MST', '<f8'), ('X1B', '<f8'), ('X2B', '<f8'), ('X3B', '<f8'), ('X4B', '<f8'), ('MAXB', '<f8'), ('MINB', '<f8'), ('MSC', '<f8'), ('DOMAIN_ID', '<i8')](61754)
+            @version = 0
+          BEAM = [('EID', '<i8'), ('GRID', '<i8', (11,)), ('SD', '<f8', (11,)), ('XC', '<f8', (11,)), ('XD', '<f8', (11,)), ('XE', '<f8', (11,)), ('XF', '<f8', (11,)), ('MAX', '<f8', (11,)), ('MIN', '<f8', (11,)), ('MST', '<f8', (11,)), ('MSC', '<f8', (11,)), ('DOMAIN_ID', '<i8')](5249892)
+            @version = 0
+          CONROD = [('EID', '<i8'), ('A', '<f8'), ('MSA', '<f8'), ('T', '<f8'), ('MST', '<f8'), ('DOMAIN_ID', '<i8')](46516)
+            @version = 0
+          ELAS1 = [('EID', '<i8'), ('S', '<f8'), ('DOMAIN_ID', '<i8')](72180)
+            @version = 0
+          ELAS2 = [('EID', '<i8'), ('S', '<f8'), ('DOMAIN_ID', '<i8')](53734)
+            @version = 0
+          QUAD4 = [('EID', '<i8'), ('FD1', '<f8'), ('X1', '<f8'), ('Y1', '<f8'), ('XY1', '<f8'), ('FD2', '<f8'), ('X2', '<f8'), ('Y2', '<f8'), ('XY2', '<f8'), ('DOMAIN_ID', '<i8')](9261496)
+            @version = 0
+          QUAD4_COMP = [('EID', '<i8'), ('PLY', '<i8'), ('X1', '<f8'), ('Y1', '<f8'), ('T1', '<f8'), ('L1', '<f8'), ('L2', '<f8'), ('DOMAIN_ID', '<i8')](48326916)
+            @version = 0
+          ROD = [('EID', '<i8'), ('A', '<f8'), ('MSA', '<f8'), ('T', '<f8'), ('MST', '<f8'), ('DOMAIN_ID', '<i8')](5751142)
+            @version = 0
+          TRIA3 = [('EID', '<i8'), ('FD1', '<f8'), ('X1', '<f8'), ('Y1', '<f8'), ('TXY1', '<f8'), ('FD2', '<f8'), ('X2', '<f8'), ('Y2', '<f8'), ('TXY2', '<f8'), ('DOMAIN_ID', '<i8')](259848)
+            @version = 0
+          TRIA3_COMP = [('EID', '<i8'), ('PLY', '<i8'), ('X1', '<f8'), ('Y1', '<f8'), ('T1', '<f8'), ('L1', '<f8'), ('L2', '<f8'), ('DOMAIN_ID', '<i8')](467566)
+            @version = 0
+        STRESS:NXgroup
+          BAR = [('EID', '<i8'), ('X1A', '<f8'), ('X2A', '<f8'), ('X3A', '<f8'), ('X4A', '<f8'), ('AX', '<f8'), ('MAXA', '<f8'), ('MINA', '<f8'), ('MST', '<f8'), ('X1B', '<f8'), ('X2B', '<f8'), ('X3B', '<f8'), ('X4B', '<f8'), ('MAXB', '<f8'), ('MINB', '<f8'), ('MSC', '<f8'), ('DOMAIN_ID', '<i8')](61754)
+            @version = 0
+          BEAM = [('EID', '<i8'), ('GRID', '<i8', (11,)), ('SD', '<f8', (11,)), ('XC', '<f8', (11,)), ('XD', '<f8', (11,)), ('XE', '<f8', (11,)), ('XF', '<f8', (11,)), ('MAX', '<f8', (11,)), ('MIN', '<f8', (11,)), ('MST', '<f8', (11,)), ('MSC', '<f8', (11,)), ('DOMAIN_ID', '<i8')](5249892)
+            @version = 0
+          CONROD = [('EID', '<i8'), ('A', '<f8'), ('MSA', '<f8'), ('T', '<f8'), ('MST', '<f8'), ('DOMAIN_ID', '<i8')](46516)
+            @version = 0
+          ELAS1 = [('EID', '<i8'), ('S', '<f8'), ('DOMAIN_ID', '<i8')](72180)
+            @version = 0
+          ELAS2 = [('EID', '<i8'), ('S', '<f8'), ('DOMAIN_ID', '<i8')](53734)
+            @version = 0
+          QUAD4 = [('EID', '<i8'), ('FD1', '<f8'), ('X1', '<f8'), ('Y1', '<f8'), ('XY1', '<f8'), ('FD2', '<f8'), ('X2', '<f8'), ('Y2', '<f8'), ('XY2', '<f8'), ('DOMAIN_ID', '<i8')](9261496)
+            @version = 0
+          QUAD4_COMP = [('EID', '<i8'), ('PLY', '<i8'), ('X1', '<f8'), ('Y1', '<f8'), ('T1', '<f8'), ('L1', '<f8'), ('L2', '<f8'), ('DOMAIN_ID', '<i8')](48326916)
+            @version = 0
+          ROD = [('EID', '<i8'), ('A', '<f8'), ('MSA', '<f8'), ('T', '<f8'), ('MST', '<f8'), ('DOMAIN_ID', '<i8')](5751142)
+            @version = 0
+          TRIA3 = [('EID', '<i8'), ('FD1', '<f8'), ('X1', '<f8'), ('Y1', '<f8'), ('TXY1', '<f8'), ('FD2', '<f8'), ('X2', '<f8'), ('Y2', '<f8'), ('TXY2', '<f8'), ('DOMAIN_ID', '<i8')](259848)
+            @version = 0
+          TRIA3_COMP = [('EID', '<i8'), ('PLY', '<i8'), ('X1', '<f8'), ('Y1', '<f8'), ('T1', '<f8'), ('L1', '<f8'), ('L2', '<f8'), ('DOMAIN_ID', '<i8')](467566)
+            @version = 0
+      NODAL:NXgroup
+        DISPLACEMENT = [('ID', '<i8'), ('X', '<f8'), ('Y', '<f8'), ('Z', '<f8'), ('RX', '<f8'), ('RY', '<f8'), ('RZ', '<f8'), ('DOMAIN_ID', '<i8')](10396326)
+          @version = 1
+        GRID_FORCE = [('ID', '<i8'), ('EID', '<i8'), ('ELNAME', 'S8'), ('F1', '<f8'), ('F2', '<f8'), ('F3', '<f8'), ('M1', '<f8'), ('M2', '<f8'), ('M3', '<f8'), ('DOMAIN_ID', '<i8')](72379751)
+          @version = 0
+        GRID_WEIGHT = [('ID', '<i8'), ('MO', '<f8', (36,)), ('S', '<f8', (9,)), ('MX', '<f8'), ('XX', '<f8'), ('YX', '<f8'), ('ZX', '<f8'), ('MY', '<f8'), ('XY', '<f8'), ('YY', '<f8'), ('ZY', '<f8'), ('MZ', '<f8'), ('XZ', '<f8'), ('YZ', '<f8'), ('ZZ', '<f8'), ('I', '<f8', (9,)), ('PIX', '<f8'), ('PIY', '<f8'), ('PIZ', '<f8'), ('Q', '<f8', (9,)), ('DOMAIN_ID', '<i8')](1)
+          @version = 0
